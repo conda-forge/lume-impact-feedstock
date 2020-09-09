@@ -5,7 +5,7 @@ Home: https://github.com/ChristopherMayes/lume-impact
 
 Package license: APACHE-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: LUME Python wrapper Impact-T
 
