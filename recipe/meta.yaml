@@ -24,6 +24,7 @@ requirements:
     - distgen
     - numpy
     - openpmd-beamphysics
+    - impact-t
 
 test:
   imports:
