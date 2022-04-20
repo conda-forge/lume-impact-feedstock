@@ -1,5 +1,5 @@
 {% set name = "lume-impact" %}
-{% set version = "0.5.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: c1fc93cdbfbfee8590114fe57e83c0b6f27f2a13efd7c8fbf60534ca024b5521
+  sha256: 8e58f139053580e10b400eca1fcca679875f2500ec0cad4d15b0a47e86e612d9
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -25,6 +25,7 @@ requirements:
     - numpy
     - openpmd-beamphysics
     - impact-t
+    - lume-base
 
 test:
   imports:
@@ -35,9 +36,9 @@ about:
   license: APACHE-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: LUME Python wrapper Impact-T
+  summary: LUME Python wrapper for Impact-T
   description: |
-    LUME Python wrapper Impact-T
+    LUME Python wrapper for Impact-T
 
 extra:
   recipe-maintainers:
