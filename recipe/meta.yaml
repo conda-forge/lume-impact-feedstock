@@ -1,5 +1,5 @@
 {% set name = "lume-impact" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 8e58f139053580e10b400eca1fcca679875f2500ec0cad4d15b0a47e86e612d9
+  sha256: f40f4b8b8825ba39f4381dba622e3c811b96061f39d7fcdffd326ebb29390601
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - bokeh
     - distgen
     - numpy
@@ -29,7 +29,11 @@ requirements:
 
 test:
   imports:
-    - impact
+    - impact  
+  requires:
+    - pytest
+  commands:
+    - python -m pytest --pyargs impact    
 
 about:
   home: https://github.com/ChristopherMayes/{{ name }}
