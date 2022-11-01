@@ -1,5 +1,5 @@
 {% set name = "lume-impact" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f40f4b8b8825ba39f4381dba622e3c811b96061f39d7fcdffd326ebb29390601
+  sha256: 88c15c672e1ae7d5dd9db406d20abc970e0dd901fa5c60d57b9473a73fe67ec0
 
 build:
   noarch: python
@@ -29,11 +29,11 @@ requirements:
 
 test:
   imports:
-    - impact  
+    - impact
   requires:
     - pytest
   commands:
-    - python -m pytest --pyargs impact    
+    - python -m pytest --pyargs impact
 
 about:
   home: https://github.com/ChristopherMayes/{{ name }}
