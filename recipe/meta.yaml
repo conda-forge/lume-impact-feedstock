@@ -1,5 +1,5 @@
 {% set name = "lume-impact" %}
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 418c16d926db538353da054bcab262b5109632b9297ec2e9664e95da0fd2fd1b
+  sha256: 1d9cf7a1818887596745edc92c815f23721525cfec29e7d53ea7a6b05f6105b7
 
 build:
   noarch: python
