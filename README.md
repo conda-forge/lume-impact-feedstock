@@ -1,11 +1,11 @@
-About lume-impact
-=================
+About lume-impact-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lume-impact-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ChristopherMayes/lume-impact
 
 Package license: APACHE-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lume-impact-feedstock/blob/main/LICENSE.txt)
 
 Summary: LUME Python wrapper for Impact-T
 
