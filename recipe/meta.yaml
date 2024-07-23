@@ -1,5 +1,5 @@
 {% set name = "lume-impact" %}
-{% set version = "0.8.6" %}
+{% set version = "0.9.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: a6ccaa18647c0cc04ea2f57a78734727c15acd090711b4d1a8a780cc6e541811
+  sha256: 4de63ecf0cf76ae54d29a8ce4e45250b0ff2e448147f492716bb028354fd62f6
 
 build:
   noarch: python
@@ -24,6 +24,7 @@ requirements:
     - distgen
     - numpy
     - openpmd-beamphysics
+    - psutil
     - impact-t
     - lume-base
 
