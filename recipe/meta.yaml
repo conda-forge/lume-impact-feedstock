@@ -1,5 +1,5 @@
 {% set name = "lume-impact" %}
-{% set version = "0.9.5" %}
+{% set version = "0.9.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: 59055e3710e87386b92a8367324c3e93ea1179834769093b44308273436e4e50
+  sha256: 1d8675ee933edefa41184a4360aa6a4825195e4f14b4a3e2665a7fe4fa70f210
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python <3.13
+    - python >=3.8
     - pip
     - setuptools_scm
   run:
-    - python <3.13
+    - python >=3.8
     - bokeh
     - distgen
     - numpy
