@@ -40,12 +40,11 @@ test:
 
 about:
   home: https://github.com/ChristopherMayes/{{ name }}
-  license: APACHE-2.0
-  license_family: APACHE
+  license: Apache-2.0
+  license_family: Apache
   license_file: LICENSE
   summary: LUME Python wrapper for Impact-T
-  description: |
-    LUME Python wrapper for Impact-T
+  description: LUME Python wrapper for Impact-T
 
 extra:
   recipe-maintainers:
