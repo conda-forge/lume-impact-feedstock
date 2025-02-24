@@ -11,17 +11,17 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - bokeh
     - distgen
     - numpy
@@ -35,6 +35,7 @@ test:
     - impact
   requires:
     - pytest
+    - python {{ python_min }}
   commands:
     - python -m pytest --pyargs impact
 
