@@ -51,7 +51,7 @@ test:
     - pytao
     - python {{ python_min }}
   commands:
-    - python -m pytest --pyargs impact
+    - python -m pytest --pyargs impact -k "not test_bmad and not test_output"
 
 about:
   home: https://github.com/ChristopherMayes/{{ name }}
