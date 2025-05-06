@@ -47,6 +47,8 @@ test:
   requires:
     - pytest
     - pytest-cov
+    - bmad
+    - pytao
     - python {{ python_min }}
   commands:
     - python -m pytest --pyargs impact
