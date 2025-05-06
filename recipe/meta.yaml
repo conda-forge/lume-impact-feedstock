@@ -24,17 +24,28 @@ requirements:
     - python >={{ python_min }}
     - bokeh
     - distgen
+    - impact-t >=3
+    - impact-z >=2.7.2
+    - lume-base
+    - matplotlib-base
     - numpy
     - openpmd-beamphysics
+    - polars
+    - prettytable
     - psutil
-    - impact-t >=2,<3
-    - lume-base
+    - pydantic
+    - pydantic-settings
+    - rich
+    - tqdm
+    - typing-extensions
 
 test:
   imports:
     - impact
+    - impact.z
   requires:
     - pytest
+    - pytest-cov
     - python {{ python_min }}
   commands:
     - python -m pytest --pyargs impact
