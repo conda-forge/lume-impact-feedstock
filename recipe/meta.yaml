@@ -1,5 +1,5 @@
 {% set name = "lume-impact" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: 2400af26c06808a44f42cf7304da80a08c6aafb7d654d0721ce5f9825172700b
+  sha256: 70bab178380565591d5e0f5de210b2633741ef2e8c0f90a716792c749df92d8f
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
