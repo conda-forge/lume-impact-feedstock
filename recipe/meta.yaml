@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ requirements:
     - lume-base
     - matplotlib-base
     - numpy
-    - openpmd-beamphysics
+    - openpmd-beamphysics >=0.14.0
     - polars
     - prettytable
     - psutil
@@ -47,8 +47,8 @@ test:
   requires:
     - pytest
     - pytest-cov
-    - bmad
-    - pytao
+    - bmad >=20260223.1
+    - pytao >=1.0.0
     - python {{ python_min }}
   commands:
     - python -m pytest --pyargs impact -k "not test_bmad and not test_output"
