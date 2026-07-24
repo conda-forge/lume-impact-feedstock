@@ -41,6 +41,9 @@ requirements:
     - typing-extensions
 
 test:
+  files:
+    source:
+      - docs/examples/
   imports:
     - impact
     - impact.z
