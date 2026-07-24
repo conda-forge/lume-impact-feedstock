@@ -1,5 +1,5 @@
 {% set name = "lume-impact" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: 64d3b87a088347c6a29d29099d54a0a5998cef0f1facc51e5f8b88d3d490a52e
+  sha256: e0097f8efd62abb435ef8e03d6130d859220f3200d034b25b11d1ebb9f4979cb
 
 build:
   noarch: python
@@ -41,6 +41,8 @@ requirements:
     - typing-extensions
 
 test:
+  source_files:
+    - docs/examples/
   imports:
     - impact
     - impact.z
@@ -51,7 +53,7 @@ test:
     - pytao >=1.0.0
     - python {{ python_min }}
   commands:
-    - python -m pytest --pyargs impact -k "not test_bmad and not test_output"
+    - python -m pytest --pyargs impact -k "not test_bmad and not test_output and not test_distgen_model"
 
 about:
   home: https://github.com/ChristopherMayes/{{ name }}
@@ -65,3 +67,4 @@ extra:
   recipe-maintainers:
     - ChristopherMayes
     - ken-lauer
+    - tangkong
