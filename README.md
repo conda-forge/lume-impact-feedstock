@@ -148,4 +148,5 @@ Feedstock Maintainers
 
 * [@ChristopherMayes](https://github.com/ChristopherMayes/)
 * [@ken-lauer](https://github.com/ken-lauer/)
+* [@tangkong](https://github.com/tangkong/)
 
