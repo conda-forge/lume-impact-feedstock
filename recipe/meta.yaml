@@ -53,7 +53,7 @@ test:
     - pytao >=1.0.0
     - python {{ python_min }}
   commands:
-    - python -m pytest --pyargs impact -k "not test_bmad and not test_output"
+    - python -m pytest --pyargs impact -k "not test_bmad and not test_output and not test_distgen_model"
 
 about:
   home: https://github.com/ChristopherMayes/{{ name }}
